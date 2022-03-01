@@ -1,14 +1,19 @@
 body {
     margin: 0;
-    background: rbg(200, 255, 239);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .main-game {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 .genius {
@@ -18,8 +23,6 @@ body {
         'yellow blue'
     ;
     grid-gap: 10px;
-    border: 1px solid white;
-    background: whtie;
     border-radius: 100%;
     margin-top: 20px;
     width: 700px;
@@ -27,27 +30,31 @@ body {
 }
 
 .green {
-    background: green;
-    grid-area: green;
+    background: rgb(17, 199, 0);
+    grid-area: rgb(17, 199, 0);
     border-top-left-radius: 100%;
+    box-shadow: 0 0 3px black;
 }
 
 .red {
-    background: red;
-    grid-area: red;
+    background: rgb(255, 0, 179);
+    grid-area: rgb(255, 0, 179);
     border-top-right-radius: 100%;
+    box-shadow: 0 0 3px black;
 }
 
 .blue {
-    background: blue;
-    grid-area: blue;
+    background: rgb(0, 140, 255);
+    grid-area: rgb(0, 140, 255);
     border-bottom-right-radius: 100%;
+    box-shadow: 0 0 3px black;
 }
 
 .yellow {
-    background: yellow;
-    grid-area: yellow;
+    background: rgb(255, 123, 0);
+    grid-area: rgb(255, 123, 0);
     border-bottom-left-radius: 100%;
+    box-shadow: 0 0 3px black;
 }
 
 .selected {
